@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora Javascript</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/calculator.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <audio id="number-sound" src="audio/numeros.mpeg" type="audio/mpeg"></audio>
+  <audio id="operator-sound" src="audio/operadores.mpeg" type="audio/mpeg"></audio>
+
+
+  <div class="container">
+    <header>
+      <h1>Calculadora Javascript orientada a objetos</h1>
+      <span>com prática de grid CSS e gradiente</span>
+    </header>
+
+    <article>
+      <span>Este projeto foi criado devido à seção 6 do curso "Orientação a objetos com Javascript (projetos e typescript)", do professor Matheus Battisti, da Udemy. O mesmo teve seu HTML e CSS modificados por mim para que eu pudesse praticar Grid CSS e gradiente combinado a uma imagem. Também houve alterações no arquivo Javascript e a calculadora precisaria receber mais algumas melhorias para funcionar perfeitamente, no entanto o foco foi apenas praticar um pouco de orientação a objetos. Todo o design foi desenvolvido em conjunto com Suelem Lamim, aplicando pela primeira vez meus conhecimentos aprendidos no curso "Design gráfico - fundamentos", de Margareth Domingues.  </span>
+    </article>
+
+    <main>
+      <div id="calculator">
+        <div id="screen-container">
+          <div id="upper-number">0</div>
+          <div id="result-number">0</div>
+        </div>
+        <div id="buttons-container">
+          <div class="btn-container">
+            <div class="btn" id="ac-btn">AC</div>
+            <div class="btn" id="division-btn">/</div>
+          </div>
+          <div class="btn-container">
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+            <div class="btn">9</div>
+            <div class="btn" id="multiplication-btn">x</div>
+          </div>
+          <div class="btn-container">
+            <div class="btn">4</div>
+            <div class="btn">5</div>
+            <div class="btn">6</div>
+            <div class="btn" id="minus-btn">-</div>
+          </div>
+          <div class="btn-container">
+            <div class="btn">1</div>
+            <div class="btn">2</div>
+            <div class="btn">3</div>
+            <div class="btn" id="plus-btn">+</div>
+          </div>
+          <div class="btn-container">
+            <div class="btn" id="zero-btn">0</div>
+            <div class="btn" id="equals-btn">=</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Regis de Castro <br> 2021</p>
+    </footer>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+
+</html>
